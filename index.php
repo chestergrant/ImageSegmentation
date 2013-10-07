@@ -149,7 +149,7 @@ function segment(){
 
 function edge_segment(x,y){
    var pos = calculate_pos(x,y);
-   if((x == 0) ||(y==0)||(x==img_width)||(y==img_height)){ return true;}
+   if((x == 0) ||(y==0)||(x==img_width-1)||(y==img_height-1)){ return true;}
     if((x-1) >= 0){
         if((y-1) >= 0){
             var pos1 = calculate_pos(x-1,y-1);
